@@ -1,2 +1,3 @@
 # Car-model-Identifier-
 This C++ basic project introduces the fundamentals of programming, with a focus on using functions and Object-Oriented Programming (OOP) principles. 
+In this hands-on project, students will apply their knowledge of functions and OOP concepts to create a simple C++ program that identifies a car's make or model based on its color. Students will design a Car class with attributes like carName and carColor, along with functions to set and get these properties. The program will prompt the user to input a color, and based on the color provided, it will output a car name associated with that color.
