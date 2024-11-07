@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class car {
+public: // private and protector are also available protector just allow inheritance   
+    string model;
+    int speed;
+    int price;
+    string color;
+
+    car(string m, int s, int p, string c){
+    model = m;
+    speed = s;
+    price = p;
+    color = c;
+    }
+
+    void car_run(){
+        cout<<model<<" is left with the speed of "<< speed<<"kph"<<endl;
+
+    }
+
+};
+
+ int main(){
+  
+  car white = car("Toyota", 200, 100000, "White");
+  car black = car("BMW", 500, 300000, "Black");
+  car ofwhite = car("ROSEROYLCE", 400, 10000000, "ofWhite");
+  car red = car("Farrari", 250, 500000, "RED");
+
+  string color ;
+  cout<<"What color of car did you see as the car passed by?";
+  cin>> color;
+   if (color=="White")
+  {
+       white.car_run();
+  }
+  else if(color=="Black")
+  {
+    black.car_run();
+  }
+    else if(color=="ofWhite")
+  {
+    ofwhite.car_run();
+  }
+    else if(color=="Black")
+  {
+    red.car_run();
+  }
+  
+  return 0;
+  
+ }
